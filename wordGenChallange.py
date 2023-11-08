@@ -15,12 +15,12 @@ def wordGen(word):
     word = word.lower() # change innput into lowercase 
     
     printWord = ""  #it is an empty string now we will add every letter to it 
-    printChar =""   #we will use it as a temporaray variable to store curent changing letter
+    printChar = ""   #we will use it as a temporaray variable to store curent changing letter
 
     # i ave used chatgpt to generate this array, it was to long to write by hand 
     chars = [" ",'a', 'b', 'c', 'ç', 'd', 'e', 'f', 'g', 'ğ', 'h', 'ı', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 'ş', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '[', ']', '{', '}', ';', ':', '<', '>', ',', '.', '/', '?']
 
-    letterCount = len(word)  # we need  a for loop to print each character
+    
 
 
     for index, value in enumerate(word):  # index will give us which step we are printing and value gives us target letter
@@ -38,7 +38,7 @@ def wordGen(word):
         printWord += printChar   # when we find suitable char while loop ends and you add at the end of wour word 
 
         
-wordGen("good solution") 
+wordGen("herhangi bir şey mi merhaba ") 
 
 
 

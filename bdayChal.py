@@ -27,3 +27,5 @@ Sample Output:
 2
 
 """
+
+# ( st_pos + no_of_toys -1)%(totol_children);
