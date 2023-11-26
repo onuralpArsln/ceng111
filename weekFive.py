@@ -1,6 +1,6 @@
 
 # exampleb deki sadece funcalcı al buraya getir 
-from exampleB import funCalc, funAdd
+from exampleB import funCalc
 #böyle importlarsan fonksiyon adı çağırma için yeterli
 
 
@@ -12,6 +12,13 @@ exampleA.funCalc(3,4)
 # examplea deki her fonksiyonu al buraya getir 
 from exampleA import * 
 
+ # importladığın modül değişkenlerine ulaşabilrsin
+import exampleGlobalvar
+
+
+print(f'global var is {exampleGlobalvar.a}')
+exampleGlobalvar.a  = exampleA.funAdd(5)
+print(f'global var is {exampleGlobalvar.a}')
 
 
 print(funCalc(2,5))
