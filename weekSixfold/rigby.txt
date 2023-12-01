@@ -1,5 +1,3 @@
- my mom  a ile açarsan bu append modu olur ayrıca 
- ters slash ve n yaptım burda bu newline yani yeni satır demek 
- yeni starılara geçtim   a ile açarsan bu append modu olur ayrıca 
+naber müdür  a ile açarsan bu append modu olur ayrıca 
  ters slash ve n yaptım burda bu newline yani yeni satır demek 
  yeni starılara geçtim  
