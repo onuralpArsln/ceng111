@@ -42,4 +42,3 @@ wordGen("herhangi bir şey mi merhaba ")
 
 
 
-s
