@@ -4,7 +4,7 @@ import re
 keywords = ["help", "twosum", "sumodd"]
 
 # User input
-user_input = "semTwo"
+user_input = "smTwo"
 
 # Normalize user input to lowercase
 normalized_input = user_input.lower()
