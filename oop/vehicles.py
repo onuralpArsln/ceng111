@@ -41,6 +41,9 @@ class Automobile:
 
     def get_price(self):
         return self.__price
+    
+    def gofast(self):
+        print("wrooom wromm")
 
 # The Car class represents a car. It is a subclass
 # of the Automobile class.
