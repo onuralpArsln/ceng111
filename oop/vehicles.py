@@ -45,6 +45,9 @@ class Automobile:
     def gofast(self):
         print("wrooom wromm")
 
+    def gocareful(self):
+        print("buckle up seat belts")
+
 # The Car class represents a car. It is a subclass
 # of the Automobile class.
 
