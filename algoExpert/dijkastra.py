@@ -53,6 +53,6 @@ def precedence(op):
     else:
         return 0
 
-expression = "(3+4)*5-(6/2)"
+expression = "(3+4)+(6/2)"
 result = evaluate(expression)
 print("Result:", result)
