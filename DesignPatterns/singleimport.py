@@ -1,0 +1,3 @@
+import singletonSettings
+
+singletonSettings.specFunc()
