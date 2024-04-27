@@ -1,0 +1,9 @@
+oyuncu ilk başlasın
+
+görüntü verme 
+
+oyuncudan input alma  oyuncu clasını yazma 
+
+yapay zeka karar 
+
+hakem (hamleleri tutsun / kontrol etsin / kazanmayı fark etsin )
