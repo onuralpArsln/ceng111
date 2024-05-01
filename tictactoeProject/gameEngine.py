@@ -36,7 +36,7 @@ class GameEngine:
  
     def playerMoveRequest(self) -> None:
         moveTuple=self.player1.PlayerMove() #hamle alınıyo, oyuncunun seçtiği kare noyu alıp tuple döndüryo
-        self.gameState[int(moveTuple[0])][int(moveTuple[0])]=self.player1Move
+        self.gameState[int(moveTuple[0])][int(moveTuple[0])]=self.player1Move #oyuncunun hamlesini alıyoz boardda göstercez.İlk line satırı, ikinci sütunu belirtiyo,
 
     def turnStalker(): 
         pass
