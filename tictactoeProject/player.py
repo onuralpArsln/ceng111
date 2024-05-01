@@ -35,7 +35,7 @@ class Player:
 
 
 
-# burdan aşağsı importta çalışmaz 
+# burdan aşağsı importta çalışma 
 if __name__ == "__main__":
 
 
