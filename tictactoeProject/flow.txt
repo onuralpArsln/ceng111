@@ -24,8 +24,33 @@ oyunucnun hamlesi kurallara uygun mu bak
 
         - hamle yapılmış bir yere hamle yaparsa ne olacak?
 
-sırsıyla oyunculardan hamle iste
+        çözüldü
 
-kazandığını farket
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+        sıradaki görevler
+
+must have 
+-- burası sürekli elle yazılmasın 
+
+
+    testEngine.display() 
+    testEngine.player1MoveRequest()
+    testEngine.display()
+    testEngine.player2MoveRequest()
+    testEngine.display()
+
+bu işlemi otomatik yap
+
+nice to havee
+-- birisi 3lü yapınca kazanmayı görsün 
+
+helalll
+-- tablo dolunca oyunu berabere bitir 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+
+
 
 
