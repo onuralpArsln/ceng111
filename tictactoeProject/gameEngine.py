@@ -92,9 +92,13 @@ if __name__ == "__main__":
     testPlayer1 = Player("testPlayer1")
     testPlayer2 = Player("testPlayer2")
     testEngine=GameEngine( player1=testPlayer1, player2=testPlayer2 )
-    testEngine.display() 
-    testEngine.player1MoveRequest()
-    testEngine.display()
-    testEngine.player2MoveRequest()
-    testEngine.display()
+     
+    while testEngine:       #tm while döngüsü kullanılıcak da ıh nası devam edicez 
+        testEngine.display()          # test engine çalışrken önce display ile board gösterilicek sonra player move yapcak
+        testEngine.player1MoveRequest()
+        testEngine.display()          #sonra board yine gösterilecek oyuncunun hareketi sonrası 
+    
+        testEngine.display()          
+        testEngine.player2MoveRequest()
+        testEngine.display()
 
