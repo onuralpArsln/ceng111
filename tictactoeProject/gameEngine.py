@@ -74,9 +74,14 @@ class GameEngine:
         pass
         
     def winDetection(self)->None:  #birisi üçlü yapınca kazanmayı görcez 
-        for i in range(3): #bu yatay kazanan için olcak 
-            if self.gameState[i][0]==self.gameState[i][1]==self.gameState[i][2]!=0 :
-                print("kazandın!")
+        for i in range(3): #bu yatay kazanan için olucak 
+            if self.gameState[i][0]==self.gameState[i][1]==self.gameState[i][2]!=0:
+                print("easy win")
+                
+        for i in range(3): #dikey için olucak
+            if self.gameState[0][i]==self.gameState[1][i]==self.gameState[2][i]!=0:
+                print("easy win")
+                
 
 
                            
