@@ -73,8 +73,13 @@ class GameEngine:
     def turnStalker(): 
         pass
         
-    def winDetection(self)->None:
-        pass
+    def winDetection(self)->None:  #birisi üçlü yapınca kazanmayı görcez 
+        for i in range(3): #bu yatay kazanan için olcak 
+            if self.gameState[i][0]==self.gameState[i][1]==self.gameState[i][2]!=0 :
+                print("kazandın!")
+
+
+                           
 
     def startEngine(self):
         ## oyunu oynatan döngü
@@ -93,10 +98,12 @@ if __name__ == "__main__":
     testPlayer2 = Player("testPlayer2")
     testEngine=GameEngine( player1=testPlayer1, player2=testPlayer2 )
      
-    while testEngine:       #tm while döngüsü kullanılıcak da ıh nası devam edicez 
-        testEngine.display()          # test engine çalışrken önce display ile board gösterilicek sonra player move yapcak
+    while testEngine:     
+        testEngine.display()          
         testEngine.player1MoveRequest()
-        testEngine.display()          #sonra board yine gösterilecek oyuncunun hareketi sonrası 
+        testEngine.display()          
+        if not testEngine:
+            break
     
         testEngine.display()          
         testEngine.player2MoveRequest()
