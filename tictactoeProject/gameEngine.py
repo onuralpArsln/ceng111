@@ -81,7 +81,13 @@ class GameEngine:
         for i in range(3): #dikey için olucak
             if self.gameState[0][i]==self.gameState[1][i]==self.gameState[2][i]!=0:
                 print("easy win")
-                
+       
+        if self.gameState[0][0]==self.gameState[1][1]==self.gameState[2][2]!=0:  #sol üstten başlayan çapraz win
+            print("gg")
+         
+        if self.gameState[0][2]==self.gameState[1][1]==self.gameState[2][0]!=0: #sağ üst çapraz 
+            print("gg")
+
 
 
                            
