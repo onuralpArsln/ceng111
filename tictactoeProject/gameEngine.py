@@ -73,24 +73,59 @@ class GameEngine:
     def turnStalker(): 
         pass
         
-    def winDetection(self)->None:  #birisi üçlü yapınca kazanmayı görcez 
+    def winDetection(self)->int:  #birisi üçlü yapınca kazanmayı görcez 
         for i in range(3): #bu yatay kazanan için olucak 
             if self.gameState[i][0]==self.gameState[i][1]==self.gameState[i][2]!=0:
-                print("easy win")
+                print(f"player{self.gameState[i][0]} won")
+                return self.gameState[i][0]
                 
         for i in range(3): #dikey için olucak
             if self.gameState[0][i]==self.gameState[1][i]==self.gameState[2][i]!=0:
-                print("easy win")
+                 print(f"player{self.gameState[0][i]} won")
+                 return self.gameState[0][i]
        
         if self.gameState[0][0]==self.gameState[1][1]==self.gameState[2][2]!=0:  #sol üstten başlayan çapraz win
-            print("gg")
+             print(f"player{self.gameState[0][0]} won")
+             return self.gameState[0][0]
          
         if self.gameState[0][2]==self.gameState[1][1]==self.gameState[2][0]!=0: #sağ üst çapraz 
-            print("gg")
+             print(f"player{self.gameState[0][2]} won")
+             return self.gameState[0][2]
+        return 0 #eğer kimse kazanmazsa bu çalışır 
+
+    counter=0
+    def isBoardFull(self)->bool:
+        self.counter+=1 
+        if self.counter>=8:
+            print("tahta doldu")
+            self.counter=0 
+            return True 
+        else:
+            return False
+    
+    who_won=0
+    def isGameActive(self)->bool:
+        self.who_won=self.winDetection()
+        if self.who_won==0 and self.isBoardFull()== False:
+            return True
+        else:
+            return False
+        
+    def celebrate(self)->int:
+        if not self.who_won==0:
+            print("yippiiiee")
+        else:
+            print(f"yipiie for player {self.who_won}!") 
+    
+        
+        
 
 
 
-                           
+
+    
+    
+                       
 
     def startEngine(self):
         ## oyunu oynatan döngü
@@ -119,4 +154,7 @@ if __name__ == "__main__":
         testEngine.display()          
         testEngine.player2MoveRequest()
         testEngine.display()
+
+
+
 
