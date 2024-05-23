@@ -141,6 +141,7 @@ if __name__ == "__main__":
     testPlayer1 = Player("testPlayer1")
     testPlayer2 = Player("testPlayer2")
     testEngine=GameEngine( player1=testPlayer1, player2=testPlayer2 )
+    testEngine.start #böylelikle oyun başlatılabilir yipiiee
      
    
 
