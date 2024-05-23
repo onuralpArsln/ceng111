@@ -120,6 +120,18 @@ class GameEngine:
         
         
 
+    def start(self):
+        self.display() #başlangıç durumu, boş display
+        while self.isGameActive(): #oyun aktif olduğu sürece döngüyü çalıştırıyo
+            self.player1MoveRequest() #oyuncunun hamlesi 
+            self.display() #hamle sonrası güncel display
+            if not self.isGameActive(): 
+                break 
+            self.player2MoveRequest()
+            self.display()
+        self.celebrate #oyun sona erdiğinde kazanana YİPPİEELER
+
+
 
 
 
@@ -160,5 +172,5 @@ if __name__ == "__main__":
 
 
 
-deneme
+
 
