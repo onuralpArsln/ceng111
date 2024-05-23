@@ -135,20 +135,6 @@ class GameEngine:
 
 
 
-    
-    
-                       
-
-    def startEngine(self):
-        ## oyunu oynatan döngü
-            # boş display gelsin
-            # oyuncudan hamle istensin
-            # güncel display gelsin
-
-            pass
-
-
-
 
 if __name__ == "__main__":
 
@@ -156,19 +142,7 @@ if __name__ == "__main__":
     testPlayer2 = Player("testPlayer2")
     testEngine=GameEngine( player1=testPlayer1, player2=testPlayer2 )
      
-    while testEngine.isGameActive:     
-        testEngine.display()          
-        testEngine.player1MoveRequest()
-        testEngine.display()      
-        testEngine.winDetection()    
-        
-        if not testEngine.isGameActive:
-            break
-    
-        testEngine.display()          
-        testEngine.player2MoveRequest()
-        testEngine.display()
-        testEngine.winDetection()  
+   
 
 
 
