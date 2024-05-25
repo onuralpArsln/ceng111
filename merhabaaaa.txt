@@ -1,2 +1,48 @@
 Çalışmalarına başladın mı?
 evet sayılır ヾ(´▽｀;)ゝ
+
+
+Final hazırlığı ödevi
+
+class oluştur : araba 
+
+inheritle : yarış arabası ve minibüs 
+
+methodlar kaç kişilik maksimum hız vs 
+
+
+dosya işlmelerini yapan birclass oluşturalım
+4 methodu olsun
+verilen isimle txt dosyası oluşturma 
+iiçini okuma 
+dosyaya yazma 
+ekleme
+
+class : fileManager
+
+fileManager.read("deneme.txt")
+.create
+.write
+.append
+
+bunlar için test yazalım 
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+
+
+zamanın olursa 
+--------
+append methodun için bir test yazmayı dene 
+recursive ödevi sonra 
