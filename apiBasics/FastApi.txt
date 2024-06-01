@@ -1,0 +1,13 @@
+pip install fastapi[all]
+pip install uvicorn
+
+
+uvicorn is an ASGI (async server gateway interface) compatible web server. 
+
+when you use 
+
+uvicorn <filename>:<appname > 
+ filename -> fastApiFirst 
+ appname -> app
+
+it stars your api  and gives you a link you can use request make to make some requests 
