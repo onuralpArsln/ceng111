@@ -1,0 +1,7 @@
+import requests
+
+response = requests.get("https://python-api-maker.cyclic.app")
+
+print(response.status_code)
+print(response.json())
+

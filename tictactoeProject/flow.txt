@@ -27,7 +27,7 @@ oyunucnun hamlesi kurallara uygun mu bak
         çözüldü
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-        sıradaki görevler
+        TAMAMLANDI 
 
 must have 
 -- burası sürekli elle yazılmasın 
@@ -48,6 +48,17 @@ helalll
 -- tablo dolunca oyunu berabere bitir 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
+--------------------------------------------
+           sıradaki görevler
+while game engin döngümüzü game enginin isactive methoduna bağlı çalıştırıcaz.
+
+
+celebrate fonksiyonunu kazanan olunca çalışıcak
+
+oyun döngüsünü de gameengine.start diyince oyun başlasın çalışsın 
+
+
+testEngine
 
 
 

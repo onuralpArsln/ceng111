@@ -73,16 +73,65 @@ class GameEngine:
     def turnStalker(): 
         pass
         
-    def winDetection(self)->None:
-        pass
+    def winDetection(self)->int:  #birisi üçlü yapınca kazanmayı görcez 
+        for i in range(3): #bu yatay kazanan için olucak 
+            if self.gameState[i][0]==self.gameState[i][1]==self.gameState[i][2]!=0:
+                print(f"player{self.gameState[i][0]} won")
+                return self.gameState[i][0]
+                
+        for i in range(3): #dikey için olucak
+            if self.gameState[0][i]==self.gameState[1][i]==self.gameState[2][i]!=0:
+                 print(f"player{self.gameState[0][i]} won")
+                 return self.gameState[0][i]
+       
+        if self.gameState[0][0]==self.gameState[1][1]==self.gameState[2][2]!=0:  #sol üstten başlayan çapraz win
+             print(f"player{self.gameState[0][0]} won")
+             return self.gameState[0][0]
+         
+        if self.gameState[0][2]==self.gameState[1][1]==self.gameState[2][0]!=0: #sağ üst çapraz 
+             print(f"player{self.gameState[0][2]} won")
+             return self.gameState[0][2]
+        return 0 #eğer kimse kazanmazsa bu çalışır 
 
-    def startEngine(self):
-        ## oyunu oynatan döngü
-            # boş display gelsin
-            # oyuncudan hamle istensin
-            # güncel display gelsin
+    counter=0
+    def isBoardFull(self)->bool:
+        self.counter+=1 
+        if self.counter>=8:
+            print("tahta doldu")
+            self.counter=0 
+            return True 
+        else:
+            return False
+    
+    who_won=0
+    def isGameActive(self)->bool:
+        self.who_won=self.winDetection()
+        if self.who_won==0 and self.isBoardFull()== False:
+            return True
+        else:
+            return False
+        
+    def celebrate(self)->int:
+        if not self.who_won==0:
+            print("yippiiiee")
+        else:
+            print(f"yipiie for player {self.who_won}!") 
+    
+        
+        
 
-            pass
+    def start(self):
+        self.display() #başlangıç durumu, boş display
+        while self.isGameActive(): #oyun aktif olduğu sürece döngüyü çalıştırıyo
+            self.player1MoveRequest() #oyuncunun hamlesi 
+            self.display() #hamle sonrası güncel display
+            if not self.isGameActive(): 
+                break 
+            self.player2MoveRequest()
+            self.display()
+        self.celebrate #oyun sona erdiğinde kazanana YİPPİEELER
+
+
 
 
 
@@ -92,9 +141,11 @@ if __name__ == "__main__":
     testPlayer1 = Player("testPlayer1")
     testPlayer2 = Player("testPlayer2")
     testEngine=GameEngine( player1=testPlayer1, player2=testPlayer2 )
-    testEngine.display() 
-    testEngine.player1MoveRequest()
-    testEngine.display()
-    testEngine.player2MoveRequest()
-    testEngine.display()
+    testEngine.start #böylelikle oyun başlatılabilir yipiiee
+     
+   
+
+
+
+
 
