@@ -29,6 +29,28 @@ class Minicar(Car):
 
 #4 methodu olsun,verilen isimle txt dosyası oluşturma,içini okuma,dosyaya yazma,ekleme
 class FileManager:
+    def __init__(self,file_name):
+        self.file_name= file_name
     
+    def create_file(self):
+        with open(self.file_name, "w") as file:
+            pass
+    def read_file(self):
+        try:
+            with open(self.file_name, "r") as file:
+                return file.read()
+        except FileNotFoundError:
+            return "Can't find file"
+        
+
+    def write_file(self):
+        with open(self.file_name, "w") as file:
+            file.write()
+     
+    def append_file(self):
+        with open(self.file_name,"a") as file:
+            file.write()
+
+   
 
 
