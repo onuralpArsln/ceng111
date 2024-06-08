@@ -1,0 +1,67 @@
+oyuncu ilk başlasın
+
+görüntü verme 
+
+oyuncudan input alma  oyuncu clasını yazma 
+
+yapay zeka karar 
+
+hakem (hamleleri tutsun / kontrol etsin / kazanmayı fark etsin )
+
+
+
+
+#####  to do 
+
+oyunucnun hamlesi kurallara uygun mu bak  
+       
+        - eğer 9 dan büyük söylerse ne olacak?               - bunlardan mı verdi diye bak => 1 2 3 4 5 6 7 8 9 
+        - eğer 0 dan küçük verilirse ne olacak?
+        - eğer harf gelirse ne olacak?
+        çözüldü
+
+
+
+        - hamle yapılmış bir yere hamle yaparsa ne olacak?
+
+        çözüldü
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+        TAMAMLANDI 
+
+must have 
+-- burası sürekli elle yazılmasın 
+
+
+    testEngine.display() 
+    testEngine.player1MoveRequest()
+    testEngine.display()
+    testEngine.player2MoveRequest()
+    testEngine.display()
+
+bu işlemi otomatik yap
+
+nice to havee
+-- birisi 3lü yapınca kazanmayı görsün 
+
+helalll
+-- tablo dolunca oyunu berabere bitir 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+--------------------------------------------
+           sıradaki görevler
+while game engin döngümüzü game enginin isactive methoduna bağlı çalıştırıcaz.
+
+
+celebrate fonksiyonunu kazanan olunca çalışıcak
+
+oyun döngüsünü de gameengine.start diyince oyun başlasın çalışsın 
+
+
+testEngine
+
+
+
+
+
+

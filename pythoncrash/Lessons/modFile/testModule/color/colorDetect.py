@@ -1,0 +1,2 @@
+def color():
+    print("red")

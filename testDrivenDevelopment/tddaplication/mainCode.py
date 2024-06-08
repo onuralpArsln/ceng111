@@ -1,0 +1,3 @@
+import funcpord
+
+funcpord.saluter()
