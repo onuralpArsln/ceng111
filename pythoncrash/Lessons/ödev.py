@@ -33,7 +33,7 @@ class FileManager:
         self.file_name= file_name
     
     def create_file(self):
-        with open(self.file_name, "r") as file:
+        with open(self.file_name, "w") as file:
             pass
     def read_file(self):
         try:
@@ -44,8 +44,12 @@ class FileManager:
         
 
     def write_file(self):
+        with open(self.file_name, "w") as file:
+            file.write()
      
     def append_file(self):
+        with open(self.file_name,"a") as file:
+            file.write()
 
    
 
