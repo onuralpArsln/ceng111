@@ -3,5 +3,6 @@
     "cSpell.words": [
         "bulunmasada",
         "interfaceleri"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "basic"
 }
