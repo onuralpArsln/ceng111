@@ -1,7 +1,7 @@
 Service Locator
 Mediator
 Inversion of Control
-Dependency Injection
+Dependency Injection constructor injection
 Aspect Oriented Programming
 Template Method
 Decorator Pattern
