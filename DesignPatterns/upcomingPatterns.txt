@@ -1,0 +1,9 @@
+Service Locator
+Mediator
+Inversion of Control
+Dependency Injection
+Aspect Oriented Programming
+Template Method
+Decorator Pattern
+factory/abstract factory
+adapter pattern
