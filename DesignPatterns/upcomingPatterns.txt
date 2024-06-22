@@ -8,3 +8,12 @@ Decorator Pattern
 factory/abstract factory
 adapter pattern
 Dry 
+solid expanded
+
+KISS (Keep It Simple, Stupid)
+YAGNI (You Aren't Gonna Need It)
+Law of Demeter (LoD) / Principle of Least Knowledge
+Separation of Concerns (SoC)
+Composition Over Inheritance
+Test Driven Development
+Modular architecture
