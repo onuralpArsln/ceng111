@@ -9,7 +9,7 @@ factory/abstract factory
 adapter pattern
 Dry 
 solid expanded
-
+EXTENSıON METHOD
 KISS (Keep It Simple, Stupid)
 YAGNI (You Aren't Gonna Need It)
 Law of Demeter (LoD) / Principle of Least Knowledge
