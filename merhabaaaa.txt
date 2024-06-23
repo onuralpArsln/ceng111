@@ -15,7 +15,7 @@ dosya işlmelerini yapan birclass oluşturalım
 4 methodu olsun
 verilen isimle txt dosyası oluşturma 
 iiçini okuma 
-dosyaya yazma 
+dosyaya yazma  
 ekleme
 
 class : fileManager
