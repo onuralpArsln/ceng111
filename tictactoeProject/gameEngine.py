@@ -112,10 +112,9 @@ class GameEngine:
             return False
         
     def celebrate(self)->int:
-        if not self.who_won==0:
-            print("yippiiiee")
-        else:
-            print(f"yipiie for player {self.who_won}!") 
+         winner = self.winDetection()
+         if winner !=0:
+             print(f"yipiiiee to player {winner}")
     
         
         
